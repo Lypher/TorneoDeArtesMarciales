@@ -1,0 +1,18 @@
+body {
+  background-image: url(./assets/Fondo.png);
+  background-size: cover;
+}
+
+.containerGeneral {
+  margin-left: 20%;
+  background-color: rgb(3, 83, 83);
+  margin-right: 20%;
+  border: black double 10px;
+  margin-top: 20%;
+  justify-content: center;
+  text-align: center;
+}
+
+.opciones {
+  border: black double;
+}
