@@ -5,7 +5,7 @@ body {
   background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
-  padding: 0;
+  padding-top: 46px;
 }
 a {
   color: white;
@@ -16,10 +16,11 @@ a {
 .containerMenu {
   background-color: rgb(0, 0, 0);
   border: black double 10px;
-  width: 100vmax;
+  width: 100vw;
   display: inline-block;
   position: fixed;
   align-content: flex-end;
+  top: 0;
 }
 
 .opciones {
@@ -86,6 +87,9 @@ a {
   border: green solid;
   height: 85%;
   width: 75%;
+  transform: translateY(-10px);
+  transition: 200ms;
+  box-shadow: black 6px 6px 6px;
 }
 
 .charaContainer {
@@ -97,6 +101,76 @@ a {
   margin-top: 5%;
   margin-left: 2%;
 }
+
+.botonListo {
+  width: 15%;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 90px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12%;
+  background: rgba(248, 5, 5, 1);
+  box-shadow: inset 4px 4px 4px rgba(5, 0, 0, 0.5),
+    inset 0px -6px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+.botonListo a {
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
+.botonListo:hover {
+  cursor: pointer;
+  background: rgb(6, 112, 29);
+}
+.textoExplicativo {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 22px;
+  font-style: italic;
+}
+.preview {
+  width: 20%;
+  height: 190px;
+  display: none;
+  position: fixed;
+  bottom: 230px;
+  right: 5%;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12%;
+  background-image: url(./assets/Character11.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 4px 4px 4px rgba(5, 0, 0, 0.5),
+    inset 0px -6px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  text-align: center;
+}
+.preview h3 {
+  color: blanchedalmond;
+  text-shadow: black 2px 2px;
+  display: flex;
+  position: fixed;
+  left: 10px;
+  font-size: 20px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.preview ul {
+  position: fixed;
+  margin-top: 200px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+/* IDS */
 #pj1 {
   background-image: url(./assets/Character1.png);
 }
