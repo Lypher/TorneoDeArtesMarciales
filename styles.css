@@ -1,18 +1,47 @@
 body {
   background-image: url(./assets/Fondo.png);
   background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .containerGeneral {
-  margin-left: 20%;
-  background-color: rgb(3, 83, 83);
-  margin-right: 20%;
+  background-color: rgb(0, 0, 0);
   border: black double 10px;
-  margin-top: 20%;
-  justify-content: center;
-  text-align: center;
+  margin: -15px;
+  width: 100vmax;
+  display: inline-block;
+  position: fixed;
+  align-content: flex-end;
 }
 
 .opciones {
-  border: black double;
+  border: white solid;
+  margin: 0 auto;
+  background-color: black;
+  color: aliceblue;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10% 0 10% 0;
+  display: inline-block;
+  height: 20px;
+}
+.opciones:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.opciones p {
+  position: relative;
+  display: flex;
+  margin-top: -2px;
+}
+.ContenedorDeOpciones {
+  align-content: space-between;
+  display: flex;
+}
+.titulo {
+  width: 70%;
+  margin-top: 200px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
