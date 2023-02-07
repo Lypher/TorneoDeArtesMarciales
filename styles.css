@@ -113,13 +113,21 @@ a {
     inset 0px -6px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12px);
 }
-.botonListo h3 {
+.botonListo a {
   margin: auto;
   color: white;
+  font-size: 20px;
 }
 .botonListo:hover {
   cursor: pointer;
   background: rgb(6, 112, 29);
+}
+.textoExplicativo {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 22px;
+  font-style: italic;
 }
 
 /* IDS */
