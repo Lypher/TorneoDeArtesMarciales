@@ -66,8 +66,7 @@ const random_selec = () => {
     )
 }
 
-
-const holk = new Heros('Holk',10,10,4,2,"Strenght","")
+const holk = new Heros('Holk',10,10,4,2,"Strenght","");
 
 
 const enemy = random_selec();
@@ -97,4 +96,4 @@ const damage_apply = () => {
     }
 }
 
-play_game()
+play_game();
