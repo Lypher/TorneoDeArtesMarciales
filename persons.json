@@ -1,5 +1,6 @@
 [
     {
+        "id":1,
         "name": "Ninja Silence",
         "fuerza": 7,
         "armadura": 5,
@@ -9,6 +10,7 @@
         "retrato": "./assets/Character1.png"
     },
     {
+        "id":2,
         "name": "Holk",
         "fuerza": 10,
         "armadura": 10,
@@ -17,7 +19,8 @@
         "aspecto": "Strenght",
         "retrato": "./assets/Character2.png"
     },
-    {
+    {   
+        "id":3,
         "name": "Dark Magic",
         "fuerza": 2,
         "armadura": 3,
@@ -27,6 +30,7 @@
         "retrato": "./assets/Character3.png"
     },
     {
+        "id":4,
         "name": "Magic Bow",
         "fuerza": 5,
         "armadura": 5,
@@ -36,6 +40,7 @@
         "retrato": "./assets/Character1.png"
     },
     {
+        "id":5,
         "name": "Ogre whith Magic",
         "fuerza": 5,
         "armadura": 5,
@@ -45,6 +50,7 @@
         "retrato": "./assets/Character1.png"
     },
     {
+        "id":6,
         "name": "Shield Knight",
         "fuerza": 7,
         "armadura": 7,
