@@ -11,7 +11,10 @@ function preview1() {
         <li>Fuerza: 10</li>
         <li>Armadura: 10</li>
         <li>Velocidad: 4</li>
-        <li>Inteligencia: 2</li>`;
+        <li>Inteligencia: 2</li>
+        </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character1.png')";
     });
@@ -31,7 +34,10 @@ function preview2() {
           <li>Fuerza: 10</li>
           <li>Armadura: 10</li>
           <li>Velocidad: 4</li>
-          <li>Inteligencia: 2</li>`;
+          <li>Inteligencia: 2</li>
+          </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character2.png')";
     });
@@ -50,7 +56,9 @@ function preview3() {
             <li>Fuerza: 10</li>
             <li>Armadura: 10</li>
             <li>Velocidad: 4</li>
-            <li>Inteligencia: 2</li>`;
+            <li>Inteligencia: 2</li></ul>
+            <div class="botonListo" id="botonListo"><a>Listo</a></div>
+            `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character3.png')";
     });
@@ -69,7 +77,10 @@ function preview4() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character4.png')";
     });
@@ -88,7 +99,10 @@ function preview5() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character5.png')";
     });
@@ -107,7 +121,10 @@ function preview6() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character6.png')";
     });
@@ -126,7 +143,10 @@ function preview7() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character7.png')";
     });
@@ -145,7 +165,10 @@ function preview8() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character8.png')";
     });
@@ -164,7 +187,10 @@ function preview9() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character9.png')";
     });
@@ -184,7 +210,10 @@ function preview10() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character10.png')";
     });
@@ -204,7 +233,10 @@ function preview11() {
               <li>Fuerza: 10</li>
               <li>Armadura: 10</li>
               <li>Velocidad: 4</li>
-              <li>Inteligencia: 2</li>`;
+              <li>Inteligencia: 2</li>
+              </ul>
+        <div class="botonListo" id="botonListo"><a>Listo</a></div>
+        `;
       preview.style.display = "block";
       preview.style.backgroundImage = "url('./assets/Character11.png')";
     });
