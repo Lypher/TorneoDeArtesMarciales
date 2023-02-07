@@ -87,6 +87,9 @@ a {
   border: green solid;
   height: 85%;
   width: 75%;
+  transform: translateY(-10px);
+  transition: 200ms;
+  box-shadow: black 6px 6px 6px;
 }
 
 .charaContainer {
@@ -136,7 +139,7 @@ a {
   display: none;
   position: fixed;
   bottom: 230px;
-  right: 65px;
+  right: 5%;
   justify-content: center;
   text-align: center;
   border-radius: 12%;
