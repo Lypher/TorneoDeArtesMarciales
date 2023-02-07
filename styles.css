@@ -1,13 +1,21 @@
+/*general*/
+
 body {
   background-image: url(./assets/Fondo.png);
   background-size: cover;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.containerGeneral {
+/*clases*/
+.containerMenu {
   background-color: rgb(0, 0, 0);
   border: black double 10px;
-  margin: -15px;
   width: 100vmax;
   display: inline-block;
   position: fixed;
@@ -44,4 +52,81 @@ body {
   margin-top: 200px;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.containerSelector {
+  margin-top: 6%;
+  height: 80%;
+  width: 70%;
+  position: absolute;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 10%;
+  opacity: 1;
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.5),
+    inset 0px -6px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+.card {
+  height: 80%;
+  width: 70%;
+  background-color: red;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20%;
+  border: black solid;
+}
+
+.card:hover {
+  cursor: pointer;
+  border: green solid;
+  height: 85%;
+  width: 75%;
+}
+
+.charaContainer {
+  height: 70%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr);
+  grid-auto-rows: 30%;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+#pj1 {
+  background-image: url(./assets/Character1.png);
+}
+#pj2 {
+  background-image: url(./assets/Character2.png);
+}
+#pj3 {
+  background-image: url(./assets/Character3.png);
+}
+#pj4 {
+  background-image: url(./assets/Character4.png);
+}
+#pj5 {
+  background-image: url(./assets/Character5.png);
+}
+#pj6 {
+  background-image: url(./assets/Character6.png);
+}
+#pj7 {
+  background-image: url(./assets/Character7.png);
+}
+#pj8 {
+  background-image: url(./assets/Character8.png);
+}
+#pj9 {
+  background-image: url(./assets/Character9.png);
+}
+#pj10 {
+  background-image: url(./assets/Character10.png);
+}
+#pj11 {
+  background-image: url(./assets/Character11.png);
 }
