@@ -97,6 +97,32 @@ a {
   margin-top: 5%;
   margin-left: 2%;
 }
+
+.botonListo {
+  width: 15%;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 90px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12%;
+  background: rgba(248, 5, 5, 1);
+  box-shadow: inset 4px 4px 4px rgba(5, 0, 0, 0.5),
+    inset 0px -6px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+.botonListo h3 {
+  margin: auto;
+  color: white;
+}
+.botonListo:hover {
+  cursor: pointer;
+  background: rgb(6, 112, 29);
+}
+
+/* IDS */
 #pj1 {
   background-image: url(./assets/Character1.png);
 }
