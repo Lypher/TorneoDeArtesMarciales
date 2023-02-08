@@ -1,14 +1,5 @@
 import array_heros from './persons.json' assert {type: 'json'};
 
-const options = document.getElementById("container");
-
-options.addEventListener('click', e => {
-    e.target.id === "start" ? show_heroes() :
-        e.target.id === "help" ? help_me() :
-            e.target.id === "end" ? end_game() : false
-})
-
-
 
 class Heros {
     constructor(nombre, fuerza, armadura, velocidad, inteligencia, aspecto, retrato) {
@@ -66,7 +57,25 @@ const random_selec = () => {
     )
 }
 
-const holk = new Heros('Holk',10,10,4,2,"Strenght","");
+const select = (id) => {
+    let selc_hero;
+    array_heros.map(hero => {
+        if(hero.id === id) {
+            selc_hero = new Heros(
+                hero.name,
+                hero.fuerza,
+                hero.armadura,
+                hero.velocidad,
+                hero.inteligencia,
+                hero.aspecto,
+                hero.retrato
+            )
+        }
+    });
+    return selc_hero
+}
+
+const holk = new Heros('Holk',10,10,4,2,"Strenght","")
 
 
 const enemy = random_selec();
