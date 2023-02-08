@@ -103,12 +103,12 @@ a {
 }
 
 .botonListo {
-  width: 15%;
-  height: 60px;
+  width: 50%;
+  height: 15%;
   display: flex;
   position: fixed;
-  bottom: 50px;
-  right: 90px;
+  top: 300px;
+  right: 60px;
   justify-content: center;
   text-align: center;
   border-radius: 12%;
@@ -126,11 +126,12 @@ a {
   cursor: pointer;
   background: rgb(6, 112, 29);
 }
+
 .textoExplicativo {
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 22px;
+  font-size: 100%;
   font-style: italic;
 }
 .preview {
@@ -203,4 +204,56 @@ a {
 }
 #pj11 {
   background-image: url(./assets/Character11.png);
+}
+
+@media screen and (max-width: 992px) {
+  .containerMenu {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .titulo {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .containerSelector {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .card {
+    width: 90%;
+    height: 60%;
+  }
+
+  .botonListo {
+    width: 60%;
+    right: 20%;
+    bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    width: 100%;
+    margin: 20% auto;
+  }
+
+  .containerSelector {
+    width: 100%;
+    margin: 20% auto;
+  }
+
+  .card {
+    width: 100%;
+    height: 50%;
+  }
+
+  .botonListo {
+    width: 80%;
+    right: 10%;
+    bottom: 60px;
+  }
 }
