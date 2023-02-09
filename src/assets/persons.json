@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Ninja Silence",
+    "fuerza": 7,
+    "armadura": 5,
+    "velocidad": 10,
+    "inteligencia": 5,
+    "aspecto": "agility",
+    "retrato": "src/assets/img/Character1.png",
+    "imagenRender": ["src/assets/img-render/Character1.png"],
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "name": "Holk",
+    "fuerza": 10,
+    "armadura": 10,
+    "velocidad": 4,
+    "inteligencia": 2,
+    "aspecto": "Strenght",
+    "retrato": "src/assets/img/Character2.png",
+    "imagenRender": [
+      "src/assets/img-render/Character2.png",
+      "src/assets/img-render/Character2-lado2.png"
+    ],
+    "avatar": ""
+  },
+  {
+    "id": 3,
+    "name": "Dark Magic",
+    "fuerza": 2,
+    "armadura": 3,
+    "velocidad": 7,
+    "inteligencia": 10,
+    "aspecto": "magic",
+    "retrato": "src/assets/img/Character3.png",
+    "imagenRender": [
+      "src/assets/img-render/Character3.png",
+      "src/assets/img-render/Character3-lado2.png"
+    ],
+    "avatar": ""
+  },
+  {
+    "id": 4,
+    "name": "Magic Bow",
+    "fuerza": 5,
+    "armadura": 5,
+    "velocidad": 8,
+    "inteligencia": 8,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character4.png",
+    "imagenRender": [
+      "src/assets/img-render/Character4.png",
+      "src/assets/img-render/Character4-lado2.png"
+    ],
+    "avatar": ""
+  },
+  {
+    "id": 5,
+    "name": "Ogre whith Magic",
+    "fuerza": 5,
+    "armadura": 5,
+    "velocidad": 7,
+    "inteligencia": 6,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character5.png",
+    "imagenRender": ["src/assets/img-render/Character5.png"],
+    "avatar": ""
+  },
+  {
+    "id": 6,
+    "name": "Shield Knight",
+    "fuerza": 7,
+    "armadura": 7,
+    "velocidad": 5,
+    "inteligencia": 4,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character6.png",
+    "imagenRender": ["src/assets/img-render/Character6.png"],
+    "avatar": ""
+  },
+  {
+    "id": 7,
+    "name": "Shield Knight",
+    "fuerza": 7,
+    "armadura": 7,
+    "velocidad": 5,
+    "inteligencia": 4,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character7.png",
+    "imagenRender": [
+      "src/assets/img-render/Character7.png",
+      "src/assets/img-render/Character7-lado2.png"
+    ],
+    "avatar": ""
+  },
+  {
+    "id": 8,
+    "name": "Shield Knight",
+    "fuerza": 7,
+    "armadura": 7,
+    "velocidad": 5,
+    "inteligencia": 4,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character8.png",
+    "imagenRender": [
+      "src/assets/img-render/Character8.png",
+      "src/assets/img-render/Character8-lado2.png"
+    ],
+    "avatar": ""
+  },
+  {
+    "id": 9,
+    "name": "Shield Knight",
+    "fuerza": 7,
+    "armadura": 7,
+    "velocidad": 5,
+    "inteligencia": 4,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character9.png",
+    "imagenRender": ["src/assets/img-render/Character9.png"],
+    "avatar": ""
+  },
+  {
+    "id": 10,
+    "name": "Shield Knight",
+    "fuerza": 7,
+    "armadura": 7,
+    "velocidad": 5,
+    "inteligencia": 4,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character10.png",
+    "imagenRender": ["src/assets/img-render/Character10.png"],
+    "avatar": ""
+  }
+]
