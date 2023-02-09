@@ -1,10 +1,19 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import array_heros from '../assets/persons.json';
+import array_heros from "../assets/persons.json";
 import { Heros } from "../micro_comp/game";
-import { Fighting, Timer } from "./cudrilater";
+import { Fighting, Timer } from "./cuadrilater";
 
+// export function Playing() {
+//   const [inFight, setInFight] = useState(false);
+//   const [hero_attack, setHero_attack] = useState(false);
+//   const [enemy_attact, setEnemy_attack] = useState(false);
+
+//   const hero_id = useLocation().state;
+
+//   const myHero = select(hero_id);
+//   const enemy = random_selec();
 
 export function Playing(){
     const [inFight, setInFight] = useState(false);
@@ -38,38 +47,37 @@ export function Playing(){
                 </>
             ): <Fighting myhero={myHero} enemy={enemy}/>}
         </div>
-    </>
+        </>
 }
 
-
 function random_selec() {
-    const random = Math.floor(Math.random() * array_heros.length)
-    const random_hero = array_heros[random]
-    return new Heros(
-        random_hero.name,
-        random_hero.fuerza,
-        random_hero.armadura,
-        random_hero.velocidad,
-        random_hero.inteligencia,
-        random_hero.aspecto,
-        random_hero.retrato
-    )
+  const random = Math.floor(Math.random() * array_heros.length);
+  const random_hero = array_heros[random];
+  return new Heros(
+    random_hero.name,
+    random_hero.fuerza,
+    random_hero.armadura,
+    random_hero.velocidad,
+    random_hero.inteligencia,
+    random_hero.aspecto,
+    random_hero.imagenRender[0]
+  );
 }
 
 function select(id) {
-    let selc_hero;
-    array_heros.map(hero => {
-        if(hero.id === id) {
-            selc_hero = new Heros(
-                hero.name,
-                hero.fuerza,
-                hero.armadura,
-                hero.velocidad,
-                hero.inteligencia,
-                hero.aspecto,
-                hero.retrato
-            )
-        }
-    });
-    return selc_hero
+  let selc_hero;
+  array_heros.map((hero) => {
+    if (hero.id === id) {
+      selc_hero = new Heros(
+        hero.name,
+        hero.fuerza,
+        hero.armadura,
+        hero.velocidad,
+        hero.inteligencia,
+        hero.aspecto,
+        hero.imagenRender[0]
+      );
+    }
+  });
+  return selc_hero;
 }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onda</title>
+</head>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+
+        .container div {
+            border-radius: 50%;
+            position: absolute;
+            background: rgba( 255, 255, 255, 0.1 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 1px );
+            -webkit-backdrop-filter: blur( 1px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+        .container div:nth-child(1) {
+            width: 50%;
+            height: 50%;
+            animation: scale 200ms 0.2s;
+        }
+        .container div:nth-child(2) {
+            width: 40%;
+            height: 40%;
+            animation: scale 200ms 0.3s;
+        }
+        .container div:nth-child(3) {
+            width: 30%;
+            height: 30%;
+            animation: scale 200ms 0.4s;
+        }
+        .container div:nth-child(4) {
+            width: 20%;
+            height: 20%;
+            animation: scale 200ms 0.5s;
+        }
+        .container div:nth-child(5) {
+            width: 10%;
+            height: 10%;
+            animation: scale 200ms 0.6s;
+        }
+
+        @keyframes scale {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(2);
+            }
+        }
+
+    </style>
+
+<body>
+    
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>

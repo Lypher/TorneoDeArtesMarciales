@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explosion</title>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        
+    }
+
+    .container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .container div {
+        width: 5%;
+        height: 5%;
+        background-color: rgb(255, 177, 9);
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .container div:nth-child(1) {
+        animation: div1 400ms 0.2s;
+    }
+    .container div:nth-child(2) {
+        animation: div2 400ms 0.3s;
+    }
+    .container div:nth-child(3) {
+        animation: div3 400ms 0.2s;
+    }
+    .container div:nth-child(4) {
+        animation: div4 400ms 0.5s;
+    }
+    .container div:nth-child(5) {
+        animation: div5 400ms 0.3s;
+    }
+    .container div:nth-child(6) {
+        animation: div6 400ms 0.25s;
+    }
+    .container div:nth-child(7) {
+        animation: div7 400ms 0.7s;
+    }
+    .container div:nth-child(8) {
+        animation: div8 400ms 0.2s;
+    }
+
+
+    @keyframes div1 {
+        10% {
+            transform: translate(900%, 300%);
+        }
+        90% {
+            transform: translate(900%, 500%);
+        }
+        100% {
+            transform: translate(900%, 900%);
+            opacity: 0;
+        }
+    }
+    @keyframes div2 {
+        100% {
+            transform: translate(10%, 800%);
+            opacity: 0;
+        }
+    }
+    @keyframes div3 {
+        10% {
+            transform: translate(-900%, 500%);
+        }
+        90% {
+            transform: translate(-900%, 500%);
+        }
+        100% {
+            transform: translate(-900%, 500%);
+            opacity: 0;
+        }
+    }
+    @keyframes div4 {
+        10% {
+            transform: translateX(700%);
+        }
+        90% {
+            transform: translateX(700%);
+        }
+        100% {
+            transform: translateX(700%);
+            opacity: 0;
+        }
+    }
+    @keyframes div5 {
+        10% {
+            transform: translateX(-600%);
+        }
+        90% {
+            transform: translateX(-600%);
+        }
+        100% {
+            transform: translateX(-600%);
+            opacity: 0;
+        }
+    }
+    @keyframes div6 {
+        10% {
+            transform: translate(900%, -900%);
+        }
+        90% {
+            transform: translate(900%, -900%);
+        }
+        100% {
+            transform: translate(900%, -900%);
+            opacity: 0;
+        }
+    }
+    @keyframes div7 {
+        10% {
+            transform: translate(10%, -700%);
+        }
+        90% {
+            transform: translate(10%, -700%);
+        }
+        100% {
+            transform: translate(10%, -700%);
+            opacity: 0;
+        }
+    }
+    @keyframes div8 {
+        10% {
+            transform: translate(-900%, -700%);
+        }
+        90% {
+            transform: translate(-900%, -700%);
+        }
+        100% {
+            transform: translate(-900%, -700%);
+            opacity: 0;
+        }
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>
