@@ -1,0 +1,63 @@
+[
+    {
+        "id":1,
+        "name": "Ninja Silence",
+        "fuerza": 7,
+        "armadura": 5,
+        "velocidad": 10,
+        "inteligencia": 5,
+        "aspecto": "agility",
+        "retrato": "./assets/Character1.png"
+    },
+    {
+        "id":2,
+        "name": "Holk",
+        "fuerza": 10,
+        "armadura": 10,
+        "velocidad": 4,
+        "inteligencia": 2,
+        "aspecto": "Strenght",
+        "retrato": "./assets/Character2.png"
+    },
+    {   
+        "id":3,
+        "name": "Dark Magic",
+        "fuerza": 2,
+        "armadura": 3,
+        "velocidad": 7,
+        "inteligencia": 10,
+        "aspecto": "magic",
+        "retrato": "./assets/Character3.png"
+    },
+    {
+        "id":4,
+        "name": "Magic Bow",
+        "fuerza": 5,
+        "armadura": 5,
+        "velocidad": 8,
+        "inteligencia": 8,
+        "aspecto": "Hibrid",
+        "retrato": "./assets/Character1.png"
+    },
+    {
+        "id":5,
+        "name": "Ogre whith Magic",
+        "fuerza": 5,
+        "armadura": 5,
+        "velocidad": 7,
+        "inteligencia": 6,
+        "aspecto": "Hibrid",
+        "retrato": "./assets/Character1.png"
+    },
+    {
+        "id":6,
+        "name": "Shield Knight",
+        "fuerza": 7,
+        "armadura": 7,
+        "velocidad": 5,
+        "inteligencia": 4,
+        "aspecto": "Hibrid",
+        "retrato": "./assets/Character1.png"
+    }
+
+]
