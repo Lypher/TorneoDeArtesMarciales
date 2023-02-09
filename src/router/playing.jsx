@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import array_heros from '../assets/persons.json';
 import { Heros } from "../micro_comp/game";
-import { Fighting, Timer } from "./cudrilater";
+import { Fighting, Timer } from "./cuadrilater";
 
 
 export function Playing(){
