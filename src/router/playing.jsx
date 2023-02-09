@@ -1,39 +1,42 @@
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import array_heros from '../assets/persons.json';
 import { Heros } from "../micro_comp/game";
-
-
+import { Fighting, Timer } from "./cudrilater";
 
 
 export function Playing(){
     const [inFight, setInFight] = useState(false);
-    const [hero_attack, setHero_attack] = useState(false);
-    const [enemy_attact, setEnemy_attack] = useState(false);
-
     const hero_id = useLocation().state;
-    
+
+    useEffect(() => {
+        setTimeout(() => {
+            setInFight(true);
+        },3000)
+    },[])
+
     const myHero = select(hero_id);
     const enemy = random_selec();
 
-    
-
-
-
     return <>
         <div className="DFL FLCOL MXW620 MNW280 P5-20 W1X GAP80">
-            <div className="DFL JSTCC colorw ">
-                <h1 className="vs RD50X">VS</h1>
-            </div>
-            <div className="DFL JSTCSB FLRW MXW620">
-                <div className="select_hero_img">
-                    <img className="slct" src={`/${myHero.image}`} />
-                </div>
-                <div className="select_hero_img">
-                    <img className="slct" src={`/${enemy.image}`}/>
-                </div>
-            </div>
+            {!inFight? (
+                <>
+                    <div className="DFL JSTCC colorw ">
+                        <h1 className="vs RD50X">VS</h1>
+                    </div>
+                    <div className="DFL JSTCSB FLRW MXW620">
+                        <div className="select_hero_img">
+                            <img className="slct" src={`/${myHero.image}`} />
+                        </div>
+                        <div className="select_hero_img">
+                            <img className="slct" src={`/${enemy.image}`}/>
+                        </div>
+                    </div>
+                    <Timer />
+                </>
+            ): <Fighting myhero={myHero} enemy={enemy}/>}
         </div>
     </>
 }

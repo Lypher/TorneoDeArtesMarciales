@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { BrowserRouter, Outlet } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import { Header } from './Header'
-import { Content } from './router/Content'
 
 function App() {
 
@@ -13,7 +11,7 @@ function App() {
         <div>
           <Header />
         </div>
-        <div className='main_content'>
+        <div className='main_content PSTR'>
           <div className='DFL W1X JSTCC'>
             <Outlet/>
           </div>

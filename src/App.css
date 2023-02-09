@@ -160,23 +160,47 @@
 
 
 
+.FS11 {font-size: 11px;}
+.FWTH6C {font-weight: 600;}
+
+.CWTH {color: white;}
+
 
 .JSTCSB {justify-content: space-between;}
 .JSTCC {justify-content: center;}
+.JSTCSA {justify-content: space-around;}
 .DFL {display: flex;}
 .FLRW {flex-direction: row;}
+.FLWRWR {flex-wrap: wrap;}
 .FLCOL {flex-direction: column;}
+
+.DGR {display: grid;}
+.GRTRAF {grid-template-rows: auto 1fr;}
+
+.ALGIC {align-items: center;}
+
 
 .MXW620{max-width: 620px;}
 .MXW400 {max-width: 400px;}
+.MXW820 {max-width: 820px;}
+.MXW140 {max-width: 140px;}
+
+
 .MNW280 {min-width: 280px;}
 .W1X {width: 100%;}
+.W70 {width: 70px;}
 
 
 .RD50X {border-radius: 50%;}
+.RD5 {border-radius: 5px;}
+.RD3 {border-radius: 3px;}
 
 
 .GAP80 {gap: 80px;}
+.GAP5 {gap: 5px;}
+.GAP15 {gap: 15px;}
+.GAP20 {gap: 20px;}
+.GAP160 {gap: 160px;}
 
 .TXTAC {text-align: center;}
 
@@ -190,6 +214,73 @@
   background: #35353544;
 }
 
+.P2 {padding: 2px;}
 .P5-20 {padding: 5px 20px;}
+.P5-10 {padding: 5px 10px}
+
+.PT100 {padding-top: 100px;}
 
 .TXTTRC {text-transform: capitalize;}
+
+.PSTR {position: relative;}
+
+
+
+
+
+.modal_fix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.timer {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+
+
+
+
+.fighting_cont {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 30px;
+}
+
+.healt_state {
+  background: #a9a9a9c7;
+}
+
+.healt_label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.healt_label i {font-size: 18px; color: red;}
+
+.ds_heal_c {background: #4e4e4eb0; gap: 2px; height: 25px; padding: 3px; border-radius: 4px;}
+
+.sp {background: none; height: 8px;}
+.sp_enemy::-webkit-progress-value {background-color: rgb(219, 70, 11);}
+.sp_myh::-webkit-progress-value {background-color: rgb(31, 175, 31);}
+.blue_bar::-webkit-progress-value {background-color: rgb(14, 133, 231);}
+.sp_gn::-moz-progress-bar {
+  background-color: #c0c0c0b2;
+}
+
+.progress_sub {top: -9px;}
+
+/*************** micro components **************/
+.mxsqr80 {max-width: 120px; max-height: 120px;}
