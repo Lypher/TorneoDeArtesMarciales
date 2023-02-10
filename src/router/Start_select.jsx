@@ -10,11 +10,11 @@ export function Select_hero() {
             <div className='select_hero_container'>
                 <div className='grid_heros'>
                     {array_heros.map(hero => (
-                        <div>
-                       <button onClick={()=>setHero(hero)}
-                            className='box_gr_hero'>
-                            <img src={hero.retrato} className="slct"/>
-                        </button>
+                        <div key={`${hero.name.split(/[ _-]/).join("-")}-${hero.id}`}>
+                            <button onClick={()=>setHero(hero)}
+                                className='box_gr_hero'>
+                                <img src={hero.retrato} className="slct"/>
+                            </button>
                         </div>
                     ))}
                 </div>

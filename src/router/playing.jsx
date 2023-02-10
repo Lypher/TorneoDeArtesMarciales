@@ -1,36 +1,44 @@
 import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import array_heros from "../assets/persons.json";
 import { Heros } from "../micro_comp/game";
+import { Fighting, Timer } from "./cuadrilater";
 
-export function Playing() {
-  const [inFight, setInFight] = useState(false);
-  const [hero_attack, setHero_attack] = useState(false);
-  const [enemy_attact, setEnemy_attack] = useState(false);
 
-  const hero_id = useLocation().state;
+export function Playing(){
+    const [inFight, setInFight] = useState(false);
+    const [enemy, setEnemy] = useState(random_selec());
+    const hero_id = useLocation().state;
 
-  const myHero = select(hero_id);
-  const enemy = random_selec();
+    useEffect(() => {
+        setTimeout(() => {
+            setInFight(true);
+        },3000)
+    },[])
 
-  return (
-    <>
-      <div className="DFL FLCOL MXW620 MNW280 P5-20 W1X GAP80">
-        <div className="DFL JSTCC colorw ">
-          <h1 className="vs RD50X">VS</h1>
+    const myHero = select(hero_id);
+
+    return <>
+        <div className="DFL FLCOL MXW620 MNW280 P5-20 W1X GAP80">
+            {!inFight? (
+                <>
+                    <div className="DFL JSTCC colorw ">
+                        <h1 className="vs RD50X">VS</h1>
+                    </div>
+                    <div className="DFL JSTCSB FLRW MXW620">
+                        <div className="select_hero_img">
+                            <img className="slct" src={`/${myHero.image}`} />
+                        </div>
+                        <div className="select_hero_img">
+                            <img className="slct" src={`/${enemy.image}`}/>
+                        </div>
+                    </div>
+                    <Timer />
+                </>
+            ): <Fighting myhero={myHero} enemy={enemy}/>}
         </div>
-        <div className="DFL JSTCSB FLRW MXW620">
-          <div className="select_hero_img">
-            <img className="slct" src={`/${myHero.image}`} />
-          </div>
-          <div className="select_hero_img">
-            <img className="slct" src={`/${enemy.image}`} />
-          </div>
-        </div>
-      </div>
-    </>
-  );
+        </>
 }
 
 function random_selec() {
@@ -43,7 +51,9 @@ function random_selec() {
     random_hero.velocidad,
     random_hero.inteligencia,
     random_hero.aspecto,
-    random_hero.imagenRender[0]
+    random_hero.retrato,
+    random_hero.avatar,
+    random_hero.imagenRender
   );
 }
 
@@ -58,7 +68,9 @@ function select(id) {
         hero.velocidad,
         hero.inteligencia,
         hero.aspecto,
-        hero.imagenRender[0]
+        hero.retrato,
+        hero.avatar,
+        hero.imagenRender
       );
     }
   });
