@@ -100,8 +100,13 @@ export function Fighting ({myhero,enemy}) {
                                     </div>
                                 </div>
                                 <div className="DFL mxsqr80"> {/*********** zone animation image ************/}
+
+
                                     <img className="slct"
                                         src={`/${myhero.animation[0]}`} />
+
+
+                                        
                                 </div>
                             </div>
         
