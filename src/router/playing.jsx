@@ -5,18 +5,10 @@ import array_heros from "../assets/persons.json";
 import { Heros } from "../micro_comp/game";
 import { Fighting, Timer } from "./cuadrilater";
 
-// export function Playing() {
-//   const [inFight, setInFight] = useState(false);
-//   const [hero_attack, setHero_attack] = useState(false);
-//   const [enemy_attact, setEnemy_attack] = useState(false);
-
-//   const hero_id = useLocation().state;
-
-//   const myHero = select(hero_id);
-//   const enemy = random_selec();
 
 export function Playing(){
     const [inFight, setInFight] = useState(false);
+    const [enemy, setEnemy] = useState(random_selec());
     const hero_id = useLocation().state;
 
     useEffect(() => {
@@ -26,7 +18,6 @@ export function Playing(){
     },[])
 
     const myHero = select(hero_id);
-    const enemy = random_selec();
 
     return <>
         <div className="DFL FLCOL MXW620 MNW280 P5-20 W1X GAP80">
@@ -60,7 +51,9 @@ function random_selec() {
     random_hero.velocidad,
     random_hero.inteligencia,
     random_hero.aspecto,
-    random_hero.imagenRender[0]
+    random_hero.retrato,
+    random_hero.avatar,
+    random_hero.imagenRender
   );
 }
 
@@ -75,7 +68,9 @@ function select(id) {
         hero.velocidad,
         hero.inteligencia,
         hero.aspecto,
-        hero.imagenRender[0]
+        hero.retrato,
+        hero.avatar,
+        hero.imagenRender
       );
     }
   });
