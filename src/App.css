@@ -33,12 +33,24 @@
   gap: 10px;
 }
 
+button {
+  color: rgb(39, 26, 26);
+  cursor: pointer;
+  backdrop-filter: blur(6px); background-color: rgba(255, 255, 255,1);    
+  box-shadow: 35px 35px 68px 0px rgba(252, 65, 65, 0.349), inset -5px -5px 16px 0px rgba(252, 65, 65, 0.322), inset 0px 11px 28px 0px rgb(255, 255, 255);
+  border: solid 1px red;
+}
+
+button:hover {
+  border-color: white;
+  background:#6b2e2ecf;
+}
+
 .btn_link {
   border: solid 1px transparent;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 16px;
-  color: white;
   font-weight: 600;
   background-color: #a1a1a1b6;
   width: 160px;
@@ -58,7 +70,11 @@
 
 .wrapper820 {
   max-width: 820px;
-  background: #d3d3d382;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 10px;
   padding-bottom: 20px;
 }
@@ -106,7 +122,7 @@
   flex-wrap: nowrap;
   align-items: center;
   gap: 10px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   background: #000000a6;
   zoom: 0.85;
@@ -120,6 +136,7 @@
   font-family: sans-serif;
   color: white;
   font-weight: 600;
+  gap: 5px;
 }
 .detail_name {
   text-align: center;
@@ -240,7 +257,7 @@
 
 .PT100 {padding-top: 100px;}
 
-.TXTTRC {text-transform: capitalize;}
+.TXTTRC {text-transform: capitalize; margin-bottom: 5px;}
 
 .PSTR {position: relative;}
 .TRST05 {transition: all, 0.5s;}
@@ -321,15 +338,8 @@
   display: flex;
   padding: 5px 10px;
   border-radius: 5px;
-  background: #df5555cf;
-  border: solid 1px red;
-  color: white;
   font-weight: 600;
   font-size: 16px;
-}
-.large_button:hover {
-  border-color: white;
-  background:#8d3535cf;
 }
 
 
