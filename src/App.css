@@ -8,6 +8,20 @@
   font-family: sans-serif;
 }
 
+button {
+  color: rgb(39, 26, 26);
+  cursor: pointer;
+  backdrop-filter: blur(6px); 
+  background-color: rgba(255, 255, 255, 0.521);    
+  box-shadow: 35px 35px 68px 0px rgba(252, 65, 65, 0.349), inset -5px -5px 16px 0px rgba(252, 65, 65, 0.322), inset 0px 11px 28px 0px rgb(255, 255, 255);
+  border: solid 1px red;
+}
+
+button:hover {
+  border-color: white;
+  background:#6b2e2ecf;
+}
+
 .container {
   min-height: 100vh;
   background-image: url("./assets/Fondo.png");
@@ -31,19 +45,6 @@
   grid-auto-rows: auto;
   justify-items: center;
   gap: 10px;
-}
-
-button {
-  color: rgb(39, 26, 26);
-  cursor: pointer;
-  backdrop-filter: blur(6px); background-color: rgba(255, 255, 255,1);    
-  box-shadow: 35px 35px 68px 0px rgba(252, 65, 65, 0.349), inset -5px -5px 16px 0px rgba(252, 65, 65, 0.322), inset 0px 11px 28px 0px rgb(255, 255, 255);
-  border: solid 1px red;
-}
-
-button:hover {
-  border-color: white;
-  background:#6b2e2ecf;
 }
 
 .btn_link {
@@ -184,7 +185,7 @@ button:hover {
 
 .JSTCSB {justify-content: space-between;}
 .JSTCC {justify-content: center;}
-.DFL {display: flex;}
+.DFL {display: flex; justify-content: space-between;}
 .FLRW {flex-direction: row;}
 .FLCOL {flex-direction: column;}
 
@@ -211,7 +212,7 @@ button:hover {
 .FLWRWR {flex-wrap: wrap;}
 .FLCOL {flex-direction: column;}
 
-.DGR {display: grid;}
+.DGR {display: grid; width: 100%;}
 .GRTRAF {grid-template-rows: auto 1fr;}
 
 .ALGIC {align-items: center;}
@@ -286,7 +287,6 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-
 }
 
 .timer {
@@ -295,17 +295,20 @@ button:hover {
   color: white;
 }
 
-
-
-
 .fighting_cont {
   position: absolute;
   width: 100%;
   top: 0;
   right: 0;
   left: 0;
-  padding-top: 30px;
+  padding: 30px 30px;
 }
+
+/* .fighting_area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+} */
 
 .healt_state {
   background: #a9a9a9c7;

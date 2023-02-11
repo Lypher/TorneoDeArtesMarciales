@@ -34,6 +34,7 @@ export function Fighting ({myhero,enemy}) {
     const [enemyhealt, setEnemyhealt] = useState(enemy.healt);
     const [first_attack, setFirst_attack] = useState((Math.random() <= 0.5));
     const [winner, setWinner] = useState(false)
+    debugger
 
 
     useEffect(() => {
