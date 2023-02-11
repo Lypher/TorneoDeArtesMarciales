@@ -71,7 +71,7 @@
         ]
       }
     ],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character3_AV.png"
   },
   {
     "id": 4,
@@ -102,7 +102,7 @@
         ]
       }
     ],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character4_AV.png"
   },
   {
     "id": 5,
@@ -130,7 +130,7 @@
         ]
       }
     ],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character5_AV.png"
   },
   {
     "id": 6,
@@ -142,7 +142,7 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character6.png",
     "imagenRender": ["src/assets/img-render/Character6.png"],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character6_AV.png"
   },
   {
     "id": 7,
@@ -157,7 +157,7 @@
       "src/assets/img-render/Character7.png",
       "src/assets/img-render/Character7-lado2.png"
     ],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character7_AV.png"
   },
   {
     "id": 8,
@@ -172,11 +172,11 @@
       "src/assets/img-render/Character8.png",
       "src/assets/img-render/Character8-lado2.png"
     ],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character8_AV.png"
   },
   {
     "id": 9,
-    "name": "Hiro ",
+    "name": "Nero",
     "fuerza": 7,
     "armadura": 7,
     "velocidad": 5,
@@ -184,7 +184,7 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character9.png",
     "imagenRender": ["src/assets/img-render/Character9.png"],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character9_AV.png"
   },
   {
     "id": 10,
@@ -196,6 +196,18 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character10.png",
     "imagenRender": ["src/assets/img-render/Character10.png"],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character10_AV.png"
+  },
+  {
+    "id": 11,
+    "name": "Hiro",
+    "fuerza": 7,
+    "armadura": 7,
+    "velocidad": 5,
+    "inteligencia": 4,
+    "aspecto": "Hibrid",
+    "retrato": "src/assets/img/Character11.png",
+    "imagenRender": ["src/assets/img-render/Character11.png"],
+    "avatar": "src/assets/avatars/Character11_AV.png"
   }
 ]
