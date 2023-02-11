@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Ninja Silence",
+    "name": "Kazumi",
     "fuerza": 7,
     "armadura": 5,
     "velocidad": 10,
@@ -9,11 +9,11 @@
     "aspecto": "agility",
     "retrato": "src/assets/img/Character1.png",
     "imagenRender": ["src/assets/img-render/Character1.png"],
-    "avatar": ""
+    "avatar": "src/assets/avatars/Character1_AV.png"
   },
   {
     "id": 2,
-    "name": "Holk",
+    "name": "Kenji",
     "fuerza": 10,
     "armadura": 10,
     "velocidad": 4,
@@ -24,11 +24,27 @@
       "src/assets/img-render/Character2.png",
       "src/assets/img-render/Character2-lado2.png"
     ],
-    "avatar": ""
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character2_ATK1.png",
+            "src/assets/img-render/animations/Character2_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character2_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character2_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
+    "avatar": "src/assets/avatars/Character2_AV.png"
   },
   {
     "id": 3,
-    "name": "Dark Magic",
+    "name": "Phoenix",
     "fuerza": 2,
     "armadura": 3,
     "velocidad": 7,
@@ -39,11 +55,27 @@
       "src/assets/img-render/Character3.png",
       "src/assets/img-render/Character3-lado2.png"
     ],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character3_ATK1.png",
+            "src/assets/img-render/animations/Character3_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character3_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character3_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": ""
   },
   {
     "id": 4,
-    "name": "Magic Bow",
+    "name": "Ren",
     "fuerza": 5,
     "armadura": 5,
     "velocidad": 8,
@@ -54,11 +86,27 @@
       "src/assets/img-render/Character4.png",
       "src/assets/img-render/Character4-lado2.png"
     ],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character4_ATK1.png",
+            "src/assets/img-render/animations/Character4_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character4_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character4_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": ""
   },
   {
     "id": 5,
-    "name": "Ogre whith Magic",
+    "name": "Jun",
     "fuerza": 5,
     "armadura": 5,
     "velocidad": 7,
@@ -66,11 +114,27 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character5.png",
     "imagenRender": ["src/assets/img-render/Character5.png"],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character5_ATK1.png",
+            "src/assets/img-render/animations/Character5_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character5_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character5_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": ""
   },
   {
     "id": 6,
-    "name": "Shield Knight",
+    "name": "Sachi",
     "fuerza": 7,
     "armadura": 7,
     "velocidad": 5,
@@ -82,7 +146,7 @@
   },
   {
     "id": 7,
-    "name": "Shield Knight",
+    "name": "Ayumi",
     "fuerza": 7,
     "armadura": 7,
     "velocidad": 5,
@@ -97,7 +161,7 @@
   },
   {
     "id": 8,
-    "name": "Shield Knight",
+    "name": "Aiko",
     "fuerza": 7,
     "armadura": 7,
     "velocidad": 5,
@@ -112,7 +176,7 @@
   },
   {
     "id": 9,
-    "name": "Shield Knight",
+    "name": "Hiro ",
     "fuerza": 7,
     "armadura": 7,
     "velocidad": 5,
@@ -124,7 +188,7 @@
   },
   {
     "id": 10,
-    "name": "Shield Knight",
+    "name": "Onyx",
     "fuerza": 7,
     "armadura": 7,
     "velocidad": 5,
