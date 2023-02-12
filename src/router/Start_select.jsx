@@ -1,9 +1,19 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import array_heros from '../assets/persons.json'
+import { Howl } from 'howler'
+
+import sound from '../assets/sounds/start.mp3'
+
 
 export function Select_hero() {
     const [hero, setHero] = useState(null)
+
+    //const sound = "/src/assets/sounds/start.mp3";
+    const start_sound = (src) => {
+        const s_sound = new Howl({src,html5:true});
+        s_sound.play();
+    }
 
     return <>
         <div className='wrapper820'>
@@ -42,7 +52,8 @@ export function Select_hero() {
                     </div>
                     {hero && (
                         <NavLink to={`/start/${hero.name.split(" ").join("-")}`} state={hero.id}>
-                            <button className='btn_actions'>Jugar</button>
+                            <button onClick={() => start_sound(sound)}
+                                 className='btn_actions'>Jugar</button>
                         </NavLink>
                     )}
                 </div>
