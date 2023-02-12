@@ -1,5 +1,16 @@
 export class Heros {
-    constructor(nombre, fuerza, armadura, velocidad, inteligencia, aspecto, retrato, avatar=null, animation=null) {
+    constructor(
+        nombre, 
+        fuerza, 
+        armadura, 
+        velocidad, 
+        inteligencia, 
+        aspecto, 
+        retrato, 
+        avatar=null, 
+        image_render,
+        animation=null
+    ) {
         this.name = nombre;
         this.strength = fuerza;
         this.speed = velocidad;
@@ -9,6 +20,7 @@ export class Heros {
         this.image = retrato;
         this.avatar = avatar;
         this.animation = animation;
+        this.image_render = image_render;
         this.armor = armadura;
         this.weapons = [
             { name: "Knife", damage: 1, type: "physical" },

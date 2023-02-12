@@ -53,7 +53,8 @@ function random_selec() {
     random_hero.aspecto,
     random_hero.retrato,
     random_hero.avatar,
-    random_hero.imagenRender
+    random_hero.imagenRender,
+    random_hero.animations,
   );
 }
 
@@ -70,7 +71,8 @@ function select(id) {
         hero.aspecto,
         hero.retrato,
         hero.avatar,
-        hero.imagenRender
+        hero.imagenRender,
+        hero.animations
       );
     }
   });

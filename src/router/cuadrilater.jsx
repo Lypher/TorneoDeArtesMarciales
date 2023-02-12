@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Winner } from "./winner";
+import { Transitions } from "../animations/transitions";
 
 export function Timer() {
   const [count, setCount] = useState(3);
@@ -34,6 +35,8 @@ export function Fighting ({myhero,enemy}) {
     const [myhealt, setMyheal] = useState(myhero.healt);
     const [enemyhealt, setEnemyhealt] = useState(enemy.healt);
     const [first_attack, setFirst_attack] = useState((Math.random() <= 0.5));
+    const [animate_1, setAnimate_1] = useState(false);
+    const [animate_2, setAnimate_2] = useState(false);
     const [winner, setWinner] = useState(false)
 
 
@@ -44,9 +47,13 @@ export function Fighting ({myhero,enemy}) {
         }
         const intervalId = setInterval(() => {
             if(first_attack) {
+                setAnimate_2(false);
+                setAnimate_1(true);
                 setEnemyhealt(enemyhealt - myhero.damage());
                 setFirst_attack(false)
             }else{
+                setAnimate_1(false);
+                setAnimate_2(true);
                 setMyheal(myhealt - enemy.damage());
                 setFirst_attack(true)
             }
@@ -89,7 +96,7 @@ export function Fighting ({myhero,enemy}) {
                                             >{myhero.name}</span>
                                         <div className="DFL FLRW">
                                             <div>
-                                                <img src={`/${myhero.image}`} width="25" />
+                                                <img src={`/${myhero.avatar}`} width="25" />
                                             </div>
                                             <div className="DFL FLCOL ds_heal_c">
                                                 <progress max={myhero.healt} value={myhealt}
@@ -103,8 +110,10 @@ export function Fighting ({myhero,enemy}) {
                                 <div className="DFL mxsqr80"> {/*********** zone animation image ************/}
 
 
-                                    <img className="slct"
-                                        src={`/${myhero.animation[0]}`} />
+                                    {!animate_1? (
+                                        <img className="slct"
+                                        src={`/${myhero.image_render[0]}`} />
+                                    ): (<Transitions images={myhero.animation.left[0]} />)}
 
 
                                         
@@ -119,7 +128,7 @@ export function Fighting ({myhero,enemy}) {
                                                 >{enemy.name}</span>
                                             <div className="DFL FLRW">
                                                 <div>
-                                                    <img src={`/${enemy.image}`} width="25" />
+                                                    <img src={`/${enemy.avatar}`} width="25" />
                                                 </div>
                                                 <div className="DFL FLCOL ALGIC ds_heal_c">
                                                     <progress max={enemy.healt} value={enemyhealt}
@@ -132,8 +141,12 @@ export function Fighting ({myhero,enemy}) {
                                         </div>
                                 </div>
                                 <div className="DFL mxsqr80"> {/****** zone animation image ******/}
-                                    <img className="slct" 
-                                        src={`/${enemy.animation[0]}`} />
+
+                                    {!animate_2? (
+                                        <img className="slct" 
+                                        src={`/${enemy.image_render[0]}`} />
+                                    ): (<Transitions images={enemy.animation.right[0]} />)}
+
                                 </div>
                             </div>
                         </div>
