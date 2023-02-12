@@ -187,7 +187,7 @@ button:hover {
 
 .JSTCSB {justify-content: space-between;}
 .JSTCC {justify-content: center;}
-.DFL {display: flex; justify-content: space-between;}
+.DFL {display: flex;}
 .FLRW {flex-direction: row;}
 .FLCOL {flex-direction: column;}
 
@@ -324,6 +324,9 @@ button:hover {
 .P2 {
   padding: 2px;
 }
+.P20 {
+  padding: 20px;
+}
 .P5-20 {
   padding: 5px 20px;
 }
@@ -382,11 +385,15 @@ button:hover {
   padding: 30px 30px;
 }
 
-/* .fighting_area {
+.fighting_cont > div > div:nth-child(1) {
+  justify-content: space-between;
+}
+
+.fighting_area {
   width: 100%;
   display: flex;
   justify-content: space-between;
-} */
+}
 
 .healt_state {
   background: #a9a9a9c7;
@@ -464,4 +471,24 @@ button:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+@media (max-width: 398px) {
+
+  .fighting_cont > div > div:nth-child(1) {
+    justify-content: center;
+  }
+
+  /* .select_hero_container {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
+
+  .grid_heros {
+    grid-row: 2 / 3;
+  }
+
+  .show_select_hero_container {
+    padding: 25px;
+  }
 }

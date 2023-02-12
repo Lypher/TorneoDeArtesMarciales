@@ -1,6 +1,5 @@
-
-
 export class Heros {
+<<<<<<< HEAD
     constructor(nombre, fuerza, armadura, velocidad, inteligencia, aspecto, retrato, avatar=null, animation=null) {
         this.name = nombre;
         this.strength = fuerza;
@@ -22,26 +21,55 @@ export class Heros {
             { name: "black hole", damage: 9, type: "magic" }
         ];
     }
+=======
+  constructor(
+    nombre,
+    fuerza,
+    armadura,
+    velocidad,
+    inteligencia,
+    aspecto,
+    retrato
+  ) {
+    this.name = nombre;
+    this.strength = fuerza;
+    this.speed = velocidad;
+    this.healt = 100;
+    this.intelligence = inteligencia;
+    this.appearance = aspecto;
+    this.image = retrato;
+    this.armor = armadura;
+    this.weapons = [
+      { name: "Knife", damage: 1, type: "physical" },
+      { name: "Basic sword", damage: 3, type: "physical" },
+      { name: "Excalibur sword", damage: 4, type: "phisical" },
+      { name: "Basic bow", damage: 3, type: "phisical" },
+      { name: "Crossbow", damage: 2, type: "phisical" },
+      { name: "Ball of fire", damage: 7, type: "magic" },
+      { name: "black hole", damage: 9, type: "magic" },
+    ];
+  }
+>>>>>>> 6e468696e9c283378238bcc40dffe382834ffb05
 
-    damage() {
-        let damage_factor = 1;
-        if (this.weapons.length > 0) {
-            this.weapons.map(damage => {
-                switch (damage.type) {
-                    case "physical":
-                        /// logic da
-                        damage_factor = this.speed + this.strength + this.intelligence;
-                        break;
-                    case "magic":
-                        damage_factor = this.speed + this.strength + this.intelligence;
-                        break;
-                    default:
-                        damage_factor = 1
-                    }
-                });
-            }
-        return damage_factor;
+  damage() {
+    let damage_factor = 1;
+    if (this.weapons.length > 0) {
+      this.weapons.map((damage) => {
+        switch (damage.type) {
+          case "physical":
+            /// logic da
+            damage_factor = this.speed + this.strength + this.intelligence;
+            break;
+          case "magic":
+            damage_factor = this.speed + this.strength + this.intelligence;
+            break;
+          default:
+            damage_factor = 1;
+        }
+      });
     }
+    return damage_factor;
+  }
 }
 
 /* const random_selec = () => {
@@ -76,7 +104,6 @@ const Select = (id) => {
     console.log(selc_hero)
     return selc_hero
 } */
-
 
 /* 
 const holk = new Heros('Holk',10,10,4,2,"Strenght","")

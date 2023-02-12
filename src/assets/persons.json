@@ -9,6 +9,22 @@
     "aspecto": "agility",
     "retrato": "src/assets/img/Character1.png",
     "imagenRender": ["src/assets/img-render/Character1.png"],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character1_ATK1.png",
+            "src/assets/img-render/animations/Character1_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character1_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character1_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": "src/assets/avatars/Character1_AV.png"
   },
   {
@@ -142,6 +158,22 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character6.png",
     "imagenRender": ["src/assets/img-render/Character6.png"],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character6_ATK1.png",
+            "src/assets/img-render/animations/Character6_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character6_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character6_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": "src/assets/avatars/Character6_AV.png"
   },
   {
@@ -156,6 +188,22 @@
     "imagenRender": [
       "src/assets/img-render/Character7.png",
       "src/assets/img-render/Character7-lado2.png"
+    ],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character7_ATK1.png",
+            "src/assets/img-render/animations/Character7_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character7_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character7_ATK2_lado2.png"
+          ]
+        ]
+      }
     ],
     "avatar": "src/assets/avatars/Character7_AV.png"
   },
@@ -172,6 +220,22 @@
       "src/assets/img-render/Character8.png",
       "src/assets/img-render/Character8-lado2.png"
     ],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character8_ATK1.png",
+            "src/assets/img-render/animations/Character8_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character8_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character8_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": "src/assets/avatars/Character8_AV.png"
   },
   {
@@ -184,6 +248,22 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character9.png",
     "imagenRender": ["src/assets/img-render/Character9.png"],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character9_ATK1.png",
+            "src/assets/img-render/animations/Character9_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character9_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character9_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": "src/assets/avatars/Character9_AV.png"
   },
   {
@@ -196,6 +276,22 @@
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character10.png",
     "imagenRender": ["src/assets/img-render/Character10.png"],
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character10_ATK1.png",
+            "src/assets/img-render/animations/Character10_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character10_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character10_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "avatar": "src/assets/avatars/Character10_AV.png"
   },
   {
@@ -207,6 +303,22 @@
     "inteligencia": 4,
     "aspecto": "Hibrid",
     "retrato": "src/assets/img/Character11.png",
+    "animations": [
+      {
+        "left": [
+          [
+            "src/assets/img-render/animations/Character11_ATK1.png",
+            "src/assets/img-render/animations/Character11_ATK2.png"
+          ]
+        ],
+        "right": [
+          [
+            "src/assets/img-render/animations/Character11_ATK1_lado2.png",
+            "src/assets/img-render/animations/Character11_ATK2_lado2.png"
+          ]
+        ]
+      }
+    ],
     "imagenRender": ["src/assets/img-render/Character11.png"],
     "avatar": "src/assets/avatars/Character11_AV.png"
   }
