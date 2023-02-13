@@ -88,7 +88,7 @@ export function Fighting ({myhero,enemy}) {
                         </div>
         
         
-                        <div className={`fighting_area DFL FLRW JSTCSA PT100 ${first_attack? 'enemy_atack': 'character_atack'}`}>
+                        <div className={`fighting_area DFL FLRW JSTCSA PT100 ${!first_attack? 'enemy_atack': 'character_atack'}`}>
                             <div className={`DFL FLCOL GAP15 PSTR ${first_attack? 'animate1 other1': false}`}> {/* ******* My hero box ******* */}
                                 <div >
                                     <div className="DFL FLCOL JSTCC ALGIC">
