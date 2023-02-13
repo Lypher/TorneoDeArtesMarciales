@@ -1,17 +1,20 @@
 .animate1 {
     transform: translateX(80px);
+    z-index: +1;
+    transition:all, .7s;
 }
 
 .animate2 {
     transform: translateX(-80px);
+    transition: all, .7s;
 }
 
-.enemy_atack {
+#enemy_atack {
     display: flex;
     justify-content: flex-start;
 }
 
-.character_atack {
+#character_atack {
     display: flex;
     justify-content: flex-end;
 }

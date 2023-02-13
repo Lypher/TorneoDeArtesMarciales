@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import { Winner } from "./winner";
 import { Transitions } from "../animations/transitions";
+import espada from '../assets/sounds/la-cuchilla_1.mp3'
+import { AudioPlayer } from "../assets/sounds/audioPlay";
 
 export function Timer() {
   const [count, setCount] = useState(3);
@@ -38,7 +40,8 @@ export function Fighting ({myhero,enemy}) {
     const [animate_1, setAnimate_1] = useState(false);
     const [animate_2, setAnimate_2] = useState(false);
     const [winner, setWinner] = useState(false)
-    debugger
+    //debugger
+
 
     useEffect(() => {
         if(myhealt<=0 || enemyhealt<=0){
@@ -47,21 +50,31 @@ export function Fighting ({myhero,enemy}) {
         }
         const intervalId = setInterval(() => {
             if(first_attack) {
-                setAnimate_2(false);
-                setAnimate_1(true);
-                setEnemyhealt(enemyhealt - myhero.damage());
                 setFirst_attack(false)
             }else{
-                setAnimate_1(false);
-                setAnimate_2(true);
-                setMyheal(myhealt - enemy.damage());
                 setFirst_attack(true)
             }
-        }, 1000);
+        }, 1500);
         return () => {
             clearInterval(intervalId)
         }
     },[myhealt,enemyhealt,first_attack])
+
+    useEffect(() => {
+        if(first_attack) {
+            setAnimate_2(false);
+            setTimeout(() => {
+                setAnimate_1(true);
+                setEnemyhealt(enemyhealt - myhero.damage());
+            },200)
+        }else{
+            setAnimate_1(false);
+            setTimeout(() => {
+                setAnimate_2(true);
+                setMyheal(myhealt - enemy.damage());
+            },200);
+        }
+    },[first_attack])
     
 
     return (
@@ -88,8 +101,8 @@ export function Fighting ({myhero,enemy}) {
                         </div>
         
         
-                        <div className='fighting_area DFL FLRW JSTCSA PT100' id={!first_attack? 'enemy_atack': 'character_atack'} >
-                            <div className={`DFL FLCOL GAP15 PSTR ${first_attack? 'animate1 other1': false}`}> {/* ******* My hero box ******* */}
+                        <div className='fighting_area DFL FLRW JSTCSA PT100' id={animate_1? 'character_atack': animate_2? 'enemy_atack': ""} >
+                            <div className={`DFL FLCOL GAP15 PSTR ${first_attack? 'animate1 other1': ""}`}> {/* ******* My hero box ******* */}
                                 <div >
                                     <div className="DFL FLCOL JSTCC ALGIC">
                                         <span className="FS11 FWTH6C CWTH"
