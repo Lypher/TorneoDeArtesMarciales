@@ -89,8 +89,8 @@ export function Fighting ({myhero,enemy}) {
         
         
                         <div className="fighting_area DFL FLRW JSTCSA PT100">
-                            <div className="DFL FLCOL GAP15 PSTR"> {/* ******* My hero box ******* */}
-                                <div className={animate_1? 'animate2 others2': "" }>
+                            <div className={`DFL FLCOL GAP15 PSTR ${first_attack? 'animate1 other1': false}`}> {/* ******* My hero box ******* */}
+                                <div >
                                     <div className="DFL FLCOL JSTCC ALGIC">
                                         <span className="FS11 FWTH6C CWTH"
                                             >{myhero.name}</span>
@@ -107,7 +107,7 @@ export function Fighting ({myhero,enemy}) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={`DFL mxsqr80 ${animate_1? "animate2 others2": ""}`}> {/*********** zone animation image ************/}
+                                <div className="DFL mxsqr80"> {/*********** zone animation image ************/}
 
 
                                     {!animate_1? (
@@ -121,8 +121,8 @@ export function Fighting ({myhero,enemy}) {
                             </div>
         
         
-                            <div className="DFL FLCOL GAP15 PSTR"> {/* ******* Enemy box ***********/}
-                                <div className={animate_2? 'animate2 others2': "" }>
+                            <div className={`DFL FLCOL GAP15 PSTR ${!first_attack? 'animate2 other2': false}`}> {/* ******* Enemy box ***********/}
+                                <div >
                                     <div className="DFL FLCOL JSTCC ALGIC">
                                             <span className="FS11 FWTH6C CWTH"
                                                 >{enemy.name}</span>
@@ -140,7 +140,7 @@ export function Fighting ({myhero,enemy}) {
                                             </div>
                                         </div>
                                 </div>
-                                <div className={`DFL mxsqr80 ${animate_2? "animate2 others2": ""}`}> {/****** zone animation image ******/}
+                                <div className="DFL mxsqr80" > {/****** zone animation image ******/}
 
                                     {!animate_2? (
                                         <img className="slct" 
