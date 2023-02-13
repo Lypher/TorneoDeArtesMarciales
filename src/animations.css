@@ -1,0 +1,17 @@
+.animate1 {
+    transform: translateX(80px);
+}
+
+.animate2 {
+    transform: translateX(-80px);
+}
+
+.enemy_atack {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.character_atack {
+    display: flex;
+    justify-content: flex-end;
+}

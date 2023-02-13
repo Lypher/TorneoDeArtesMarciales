@@ -38,7 +38,7 @@ export function Fighting ({myhero,enemy}) {
     const [animate_1, setAnimate_1] = useState(false);
     const [animate_2, setAnimate_2] = useState(false);
     const [winner, setWinner] = useState(false)
-
+    debugger
 
     useEffect(() => {
         if(myhealt<=0 || enemyhealt<=0){
