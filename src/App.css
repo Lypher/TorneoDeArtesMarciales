@@ -185,6 +185,8 @@ button:hover {
   text-shadow: 5px 2px 5px #080808;
 }
 
+.DNO {display: none;}
+
 .JSTCSB {justify-content: space-between;}
 .JSTCC {justify-content: center;}
 .DFL {display: flex;}
