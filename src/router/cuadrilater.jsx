@@ -40,7 +40,7 @@ export function Fighting ({myhero,enemy}) {
     const [animate_1, setAnimate_1] = useState(false);
     const [animate_2, setAnimate_2] = useState(false);
     const [winner, setWinner] = useState(false)
-    debugger
+    //debugger
 
 
     useEffect(() => {
@@ -128,7 +128,7 @@ export function Fighting ({myhero,enemy}) {
                                         src={`/${myhero.image_render[0]}`} />
                                     ): (<Transitions images={myhero.animation.left[0]} />)}
 
-                                        <div class={`container_onda PSTA ${!animate_1? 'DBL': 'DNO'}`}>
+                                        <div className={`container_onda PSTA ${!animate_1? 'DBL': 'DNO'}`}>
                                             <div></div>
                                             <div></div>
                                             <div></div>
@@ -140,7 +140,7 @@ export function Fighting ({myhero,enemy}) {
                             </div>
         
         
-                            <div className={`DFL FLCOL GAP15 PSTR ${!first_attack? 'animate2 other2': false}`}> {/* ******* Enemy box ***********/}
+                            <div className={`DFL FLCOL GAP15 PSTR ${!first_attack? 'animate2 other2': ""}`}> {/* ******* Enemy box ***********/}
                                 <div >
                                     <div className="DFL FLCOL JSTCC ALGIC">
                                             <span className="FS11 FWTH6C CWTH"
@@ -165,7 +165,8 @@ export function Fighting ({myhero,enemy}) {
                                         <img className="slct" 
                                         src={`/${enemy.image_render[0]}`} />
                                     ): (<Transitions images={enemy.animation.right[0]} />)}
-                                        <div class={`container_onda PSTA ${!animate_2? 'DBL': 'DNO'}`}>
+
+                                        <div className={`container_onda PSTA ${!animate_2? 'DBL': 'DNO'}`}>
                                             <div></div>
                                             <div></div>
                                             <div></div>

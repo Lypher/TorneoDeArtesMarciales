@@ -1,0 +1,50 @@
+{
+    "app" : {
+        "developers": [
+            {
+                "name": "Jefferson",
+                "avatar": "/avatar",
+                "twitter": "/jefferson",
+                "linkedin": "/",
+                "rol": "lorem",
+                "description": ""
+            },
+            {
+                "name": "Jefferson",
+                "avatar": "/avatar",
+                "twitter": "/jefferson",
+                "linkedin": "/",
+                "rol": "",
+                "description": ""
+            },
+            {
+                "name": "Jefferson",
+                "avatar": "/avatar",
+                "twitter": "/jefferson",
+                "linkedin": "/",
+                "rol": "",
+                "description": ""
+            }
+        ],
+        "history": [
+            {
+                "title":"Porject title",
+                "description": "lorem lorem",
+                "image": "/url/image"
+            },
+            {
+                "title":"Porject title",
+                "description": "lorem lorem",
+                "image": "/url/image"
+            }
+        ],
+        "help": [
+            {
+                "title": "como jugar",
+                "description": "fksalfdsaf fasfadsf fasdfdsafa fadsfads dladsfads fadsf afsdsf",
+                "image": "/url/image.jsp"
+            }
+        ],
+        "suport":["TODO"]
+    }
+}

@@ -12,7 +12,7 @@ export function Header() {
             <NavLink to="playing">
               <button className="btn_link">Como Jugar?</button>
             </NavLink>
-            <NavLink to="/">
+            <NavLink to="/developers">
               <button className="btn_link">Creadores</button>
             </NavLink>
             <NavLink to="/">
