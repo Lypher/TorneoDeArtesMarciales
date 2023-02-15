@@ -321,6 +321,7 @@ button:hover {
 
 .GRMN100 {grid-template-columns: repeat(auto-fit,minmax(100px,1fr));}
 .GRMN150 {grid-template-columns: repeat(auto-fit,minmax(150px,1fr));}
+.GRMN220 {grid-template-columns: repeat(auto-fit,minmax(220px,1fr));}
 
 
 .P2 {
@@ -329,6 +330,7 @@ button:hover {
 .P20 {
   padding: 20px;
 }
+.P10 {padding: 10px;}
 .P5-20 {
   padding: 5px 20px;
 }
@@ -443,6 +445,7 @@ button:hover {
 
 /*************** micro components **************/
 .mxsqr80 {max-width: 120px; max-height: 120px;} /* SQUARE 120px*/
+.mxsqr120 {max-width: 120px; max-height: 120px;}
 
 .large_button { /* LARGE BUTTON STYLE WITH MAIN COLOR */
   display: flex;
