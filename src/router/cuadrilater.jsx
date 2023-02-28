@@ -36,7 +36,7 @@ export function Timer() {
 export function Fighting ({myhero,enemy}) {
     const [myhealt, setMyheal] = useState(myhero.healt);
     const [enemyhealt, setEnemyhealt] = useState(enemy.healt);
-    const [first_attack, setFirst_attack] = useState((Math.random() <= 0.5));
+    const [first_attack, setFirst_attack] = useState((Math.random() <= 0.5)); // Math.random() <= 0.5 ---> define un valor true o false de forma random para definir quien ataca primero
     const [animate_1, setAnimate_1] = useState(false);
     const [animate_2, setAnimate_2] = useState(false);
     const [winner, setWinner] = useState(false)
@@ -44,8 +44,8 @@ export function Fighting ({myhero,enemy}) {
 
 
     useEffect(() => {
-        if(myhealt<=0 || enemyhealt<=0){
-            myhealt>0? setWinner(myhero): setWinner(enemy)
+        if(myhealt<=0 || enemyhealt<=0){  // Evalua la vida de los heros;
+            myhealt>0? setWinner(myhero): setWinner(enemy) // si la de alguno es menor que 0 define el ganador
             return
         }
         const intervalId = setInterval(() => {
@@ -120,7 +120,7 @@ export function Fighting ({myhero,enemy}) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="DFL mxsqr80 PSTA"> {/*********** zone animation image ************/}
+                                <div className="DFL mxsqr80 PSTR"> {/*********** zone animation image ************/}
 
 
                                     {!animate_1? (
@@ -128,12 +128,14 @@ export function Fighting ({myhero,enemy}) {
                                         src={`/${myhero.image_render[0]}`} />
                                     ): (<Transitions images={myhero.animation.left[0]} />)}
 
-                                        <div className={`container_onda PSTA ${!animate_1? 'DBL': 'DNO'}`}>
+                                        <div className="onda_l PSTA">
+                                        <div className={`container_onda ${!animate_1? 'DBL': 'DNO'}`}>
                                             <div></div>
                                             <div></div>
                                             <div></div>
                                             <div></div>
                                             <div></div>
+                                        </div>
                                         </div>
                                         
                                 </div>
@@ -166,12 +168,14 @@ export function Fighting ({myhero,enemy}) {
                                         src={`/${enemy.image_render[0]}`} />
                                     ): (<Transitions images={enemy.animation.right[0]} />)}
 
-                                        <div className={`container_onda PSTA ${!animate_2? 'DBL': 'DNO'}`}>
+                                        <div className="onda_r PSTA">
+                                        <div className={`container_onda ${!animate_2? 'DBL': 'DNO'}`}>
                                             <div></div>
                                             <div></div>
                                             <div></div>
                                             <div></div>
                                             <div></div>
+                                        </div>
                                         </div>
                                 </div>
                             </div>

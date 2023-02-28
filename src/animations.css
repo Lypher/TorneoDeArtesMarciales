@@ -18,3 +18,73 @@
     display: flex;
     justify-content: flex-end;
 }
+
+
+
+
+/************************* Efectos de batalla ****************************/
+.onda_l {
+    top: -80px;
+    left: -90px;
+}
+.onda_r {
+    top: -80px;
+    right: -90px;
+}
+.onda_l, .onda_r {
+    transition: all .5s;
+}
+
+
+.container_onda {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.container_onda div {
+    border-radius: 50%;
+    position: absolute;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container_onda div:nth-child(1) {
+    width: 50%;
+    height: 50%;
+    animation: scale 200ms 0.2s;
+}
+.container_onda div:nth-child(2) {
+    width: 40%;
+    height: 40%;
+    animation: scale 200ms 0.3s;
+}
+.container_onda div:nth-child(3) {
+    width: 30%;
+    height: 30%;
+    animation: scale 200ms 0.4s;
+}
+.container_onda div:nth-child(4) {
+    width: 20%;
+    height: 20%;
+    animation: scale 200ms 0.5s;
+}
+.container_onda div:nth-child(5) {
+    width: 10%;
+    height: 10%;
+    animation: scale 200ms 0.6s;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(2);
+    }
+}

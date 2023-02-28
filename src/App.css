@@ -285,6 +285,9 @@ button:hover {
 .W1X {
   width: 100%;
 }
+
+.WH0 {width: 0px; height: 0px;}
+
 .W70 {
   width: 70px;
 }
@@ -361,6 +364,7 @@ button:hover {
 .PSTR {
   position: relative;
 }
+.PSTA {position: absolute;}
 
 
 .modal_fix {
